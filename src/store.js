@@ -2,6 +2,7 @@ import { nanoid } from 'nanoid';
 import create from 'zustand';
 import { persist, devtools } from 'zustand/middleware'
 
+
 export const useTodos = create(devtools(persist((set, get) => ({
   todos: [
     { id: 1, title: 'Learn JS', completed: true },
